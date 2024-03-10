@@ -1,0 +1,8 @@
+article{
+    background: red;
+}
+
+.display-heading-2{
+    /*font-size: var(--font-size-small);*/
+    font-size: var(--step-1);
+}
