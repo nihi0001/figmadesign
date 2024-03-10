@@ -6,3 +6,37 @@ article{
     /*font-size: var(--font-size-small);*/
     font-size: var(--step-1);
 }
+
+:root{
+
+}
+
+body{
+    font-family: 'Cabin', sans-serif;
+    font-family: "Lato", sans-serif;
+}
+.greenColor{
+    --green-background-color: #4EAF4E;
+}
+
+.yellowColor{
+    --yellow-background-color: #FFCC4A;
+}
+
+.greyColor{
+    --grey-background-color: #F5F5F5;
+}
+
+.blackColor{
+    --black-background-color: #181818;
+}
+
+.whiteColor{
+    --white-background-color: #FFFFFF;
+}
+
+
+
+
+
+
