@@ -1,0 +1,18 @@
+---
+const { title, img, alt, text } = Astro.props;
+---
+
+<section>
+    <article class="teamcard">
+        <img src={img} class="teamimage" alt={alt} />
+        <h2>{title}</h2>
+        <p>{text}</p>
+    </article>
+</section>
+
+<style>
+    .teamcard{
+        display: grid;
+        grid-row: 1fr 1fr 1fr;
+    }
+</style>
