@@ -43,16 +43,51 @@
 <style>
   .grid_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    gap: 2rem;
+    padding: 25px;
   }
 
   dl {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*align-items: center;*/
     width: 100%;
+    /*gap: 1rem;*/
   }
 
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.475rem;
+    font-weight: 400;
+    letter-spacing: 0.145rem;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border-radius: 20px;
+    width: 8rem;
+  }
 
+  dd {
+    font-family: "Cabin";
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.625rem;
+  }
+
+  dl {
+    font-family: "Cabin";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.305rem;
+  }
+
+  body{
+    background: var(--white-color);
+
+  }
 </style>

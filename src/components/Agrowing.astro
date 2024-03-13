@@ -8,27 +8,29 @@
     <div class="grid">
         <section class="col1">
             <img src="" alt="">
-            <p>creative ideas</p>
-            <p>test test test</p>
+            <h3>Creative ideas</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.</p>
             <a href="">Read more</a>
         </section>
 
         <section class="col2">
             <img src="" alt="">
-            <p>creative ideas</p>
-            <p>test test test</p>
-            <a href="">Read more</a>
-        </section>   
-        <section class="col3">
-            <img src="" alt="">
-            <p>creative ideas</p>
-            <p>test test test</p>
+            <h3>Best Features</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <a href="">Read more</a>
         </section>  
+
+        <section class="col3">
+            <img src="" alt="">
+            <h3>Experience</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.</p>
+            <a href="">Read more</a>
+        </section>  
+
         <section class="col4">
             <img src="" alt="">
-            <p>creative ideas</p>
-            <p>test test test</p>
+            <h3>Easy Solutions</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <a href="">Read more</a>
         </section>
     </div>
@@ -38,14 +40,29 @@
 <style>
     .grid{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+        gap: 1rem;
     }
 
     .container{
+        /*background-color: var(--grey-color);*/
+        padding: 25px;
         background-color: var(--grey-color);
+
     }
 
     h1{
-        background-color: var(--yellow-color);
-    }
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.475rem ;
+    font-weight: 400;
+    letter-spacing: 0.145rem; 
+    background-color: var(--yellow-color);
+    border-radius: 20px;  
+    width: 18rem;
+  }
+
+
+
 </style>

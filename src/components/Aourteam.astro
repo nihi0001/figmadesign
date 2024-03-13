@@ -2,17 +2,51 @@
 const { title, img, alt, text } = Astro.props;
 ---
 
-<section>
-    <article class="teamcard">
-        <img src={img} class="teamimage" alt={alt} />
-        <h2>{title}</h2>
-        <p>{text}</p>
-    </article>
-</section>
+<article>
+  <img src={img} class="teamimage" alt={alt} />
+  <h2>{title}</h2>
+  <p>{text}</p>
+
+  <section class="icon-container">
+    <img class="icon" src="/images/instagramicon.svg" alt="">
+    <img class="icon" src="/images/facebookicon.svg" alt="">
+    <img class="icon" src="/images/twittericon.svg" alt="">
+  </section>
+</article>
 
 <style>
-    .teamcard{
-        display: grid;
-        grid-row: 1fr 1fr 1fr;
-    }
+  img.teamimage {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+  /*section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }*/
+
+  article {
+    align-items: center;
+    text-align: center;
+  }
+
+  p{
+    max-width: 300px;
+    margin: 0 auto;
+
+  }
+
+  .icon-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+
+  .icon{
+    width: 20px;
+    height: auto;
+  }
 </style>
