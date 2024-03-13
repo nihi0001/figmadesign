@@ -1,8 +1,9 @@
 <div class="container">
+    <div class="content">
     <div>
     <h1>Growing with our clients</h1>
     <h2>Our core values & principles</h2>
-    <p>Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide with additional from DevOps.</p>
+    <p class="topp">Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide with additional from DevOps.</p>
     </div>
 
     <div class="grid">
@@ -34,14 +35,22 @@
             <a href="">Read more</a>
         </section>
     </div>
-
+</div>
 </div>
 
 <style>
+
+    .content{
+        max-width: 1200px;
+        margin-inline: auto;
+    }
     .grid{
         display: grid;
         grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
         gap: 1rem;
+        /*margin-inline: auto;*/
+        /*max-width: 1200px;*/
+
     }
 
     .container{
@@ -49,6 +58,10 @@
         padding: 25px;
         background-color: var(--grey-color);
 
+    }
+
+    .topp{
+        width: 36.75rem; 
     }
 
     h1{
@@ -61,6 +74,13 @@
     background-color: var(--yellow-color);
     border-radius: 20px;  
     width: 18rem;
+  }
+
+  .col1, .col2, .col3, .col4{
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 25px;
+
   }
 
 

@@ -1,45 +1,70 @@
 <div class="container">
-    <div class="content">
-        <h1>Our history</h1>
-        <h2>Better Website Means A User Experience</h2>
-        <p>Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</p>
-        <img src="/images/ourhistory.jpg" alt="">
+  <div class="content">
+    <div class="grøn">
+      <h1>Our history</h1>
     </div>
-
-
+    <h2>Better Website Means A User Experience</h2>
+    <div class="pcontainer">
+    <p>
+      Ippsum is the result of synergy between our teams and our customers. Our
+      company culture is focused on excellent productivity, customer
+      satisfaction, respect for team and individual achievements.
+    </p>
+  </div>
+    <img src="/images/ourhistory.jpg" alt="" />
+  </div>
 </div>
 
 <style>
+  .container {
+    background-color: var(--white-color);
+    /*padding: 25px;*/
+    margin-inline: auto;
+    max-width: 900px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 
-    .container{
-        background-color: var(--white-color);
-        padding: 25px;
-    }
+  }
 
-    .content{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        }
+  .content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 
-    h1{
+  h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 1rem;
-    line-height: 1.475rem ;
+    line-height: 1.475rem;
     font-weight: 400;
-    letter-spacing: 0.145rem; 
+    letter-spacing: 0.145rem;
     background-color: var(--green-color);
     color: var(--white-color);
-    border-radius: 20px;  
-    width: 9rem;
+    border-radius: 20px;
   }
 
-  img{
+  .grøn {
+    margin: 0 auto;
+    width: 10rem;
+  }
+
+  .pcontainer{
+    text-align: center;
+    margin: 0 auto;
+
+  }
+
+  p{
+    max-width: 80ch;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  img {
     border-radius: 1.75rem;
-/*opacity: 0.4;*/ 
-
+    /*opacity: 0.4;*/
+    margin-top: 2rem;
   }
-
-
 </style>
