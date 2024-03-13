@@ -1,6 +1,10 @@
 ---
 import Layout from "../layout/Layout.astro";
 import Tbanner from "../components/Tbanner.astro";
+import Aourteam from "../components/Aourteam.astro";
+import Tcontact from "../components/Tcontact.astro";
+
+
 
 
 
@@ -9,5 +13,92 @@ import Tbanner from "../components/Tbanner.astro";
 <Layout>
     <!-- alt det her er det der bliver til <slot /> i Layout.astro -->
 <Tbanner/>
+<section class="team">
+    <div>
+      <h1 class="toph1">Meet Our Great Team</h1>
+      <p class="topp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation.</p>
+    </div>
+  </section>
+
+
+  <div class="gridteam">
+    <Aourteam
+      img="/images/teammember1.jpg"
+      title="Sarah Jasmine "
+      alt="Portrait of Sarah Jasmine"
+      text="Leverage agile frameworks to provide a robust synopsis for high level overviews."
+    />
+    <Aourteam
+      img="/images/teammember2.jpg"
+      title="John Carter"
+      alt="Portrait of John Carter"
+      text="Leverage agile frameworks to provide a robust synopsis for high level overviews."
+    />
+    <Aourteam
+      img="/images/teammember3.jpg"
+      title="Daisy Stella"
+      alt="Portrait of Daisy Stella"
+      text="Leverage agile frameworks to provide a robust synopsis for high level overviews."
+    />
+    <Aourteam
+    img="/images/teammember4.jpg"
+    title="Maya Elizabeth"
+    alt="Portrait of Daisy Stella"
+    text="Leverage agile frameworks to provide a robust synopsis for high level overviews."
+  />
+  <Aourteam
+  img="/images/teammember5.jpg"
+  title="Ryan Jackson"
+  alt="Portrait of Daisy Stella"
+  text="Leverage agile frameworks to provide a robust synopsis for high level overviews."
+/>
+<Aourteam
+img="/images/teammember6.jpg"
+title="Lilly Victoria"
+alt="Portrait of Daisy Stella"
+text="Leverage agile frameworks to provide a robust synopsis for high level overviews."
+/>
+  </div>
+
+  <Tcontact/>
+
 
 </Layout>
+
+<style>
+
+  .gridteam {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    gap: 1rem;
+    /*background-color: var(--grey-color);*/
+    /*margin: 50px;*/
+
+
+    /*padding: 10rem;*/
+    /*margin-top: -5rem; /* brug noget andet */
+  }
+
+  .toph1{
+    color: #181818;
+font-family: 'Cabin';
+font-size: 2.8125rem;
+font-style: normal;
+font-weight: 700;
+line-height: 3.2625rem;
+
+  }
+
+  .topp{
+    color: #595566;
+font-family:'Lato';
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.475rem;
+  }
+
+  
+</style>

@@ -1,0 +1,115 @@
+<div class="container">
+  <section class="image_col">
+    <img src="/images/casetop.jpg" alt="" />
+  </section>
+  <section class="flex-container">
+    <div class="row">
+      <div class="column">
+        <h3>Case name:</h3>
+      </div>
+      <div class="column">
+        <h3>Category:</h3>
+      </div>
+      <div class="column">
+        <h3>Date:</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <p>Taxes & Efficiency</p>
+      </div>
+      <div class="column">
+        <p>Business</p>
+      </div>
+      <div class="column">
+        <p>27th September 2022</p>
+      </div>
+    </div>
+    <div class="button-container">
+        <button>Live Preview</button>
+      </div>
+   
+  </section>
+  
+</div>
+
+<style>
+
+  img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .image_col {
+    margin-top: 2rem;
+    /*padding: 50px;*/
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black-color);
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    /*margin-top: -3rem;*/
+    z-index: 100;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+
+  h3 {
+    margin: 0;
+    color: var(--white-color);
+    font-family: "Cabin";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.45rem;
+  }
+
+  p {
+    margin: 0;
+    color: var(--white-color);
+    font-family: "Cabin";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16rem;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px; 
+  }
+
+  button {
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+    display: flex;
+    gap: 0.625rem; 
+    padding: 1rem 2.0625rem; 
+    border-radius: 2.625rem;
+    border: none;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.8rem;
+  }
+</style>
